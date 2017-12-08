@@ -1,6 +1,1 @@
-{
-  "esm": "js",
-  "cjs": {
-    "vars": true
-  }
-}
+"cjs"

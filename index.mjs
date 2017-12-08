@@ -3,10 +3,8 @@ async function* gen() {
   yield 'last'
 }
 
-async function main() {
+export default async function main() {
   for await (let item of gen()) {
     console.log(item)
   }
 }
-
-main()

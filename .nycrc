@@ -1,0 +1,16 @@
+{
+  "exclude": [
+    ".babelrc.js",
+    "test"
+  ],
+  "extension": [
+    ".mjs"
+  ],
+  "require": [
+    "@std/esm",
+    "@babel/register",
+    "@babel/polyfill"
+  ],
+  "instrument": false,
+  "sourceMap": false
+}

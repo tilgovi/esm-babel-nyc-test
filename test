@@ -1,9 +1,0 @@
-#!/bin/sh
-cd "$(dirname "$0")" || exit
-rm -rf ./node_modules/.cache
-
-if [ "$1" = "--nyc" ]; then
-  exec nyc -i @std/esm -i @babel/register -i @babel/polyfill node index.mjs
-else
-  exec node -r @std/esm -r @babel/register -r @babel/polyfill index.mjs
-fi
